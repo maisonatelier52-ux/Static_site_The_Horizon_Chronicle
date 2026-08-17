@@ -1,0 +1,264 @@
+{
+  "authors": [
+    {
+      "slug": "samira-mitchell",
+      "name": "Samira Mitchell",
+      "role": "Global Affairs Editor",
+      "location": "New York",
+      "image": "/images/authors/claire_donovan.webp",
+      "email": "samira@horizon-chronicle.example",
+      "beats": [
+        "World",
+        "Politics"
+      ],
+      "bio": "Samira Mitchell reports on diplomacy, conflict, democratic institutions, and the human consequences of international decisions. She has worked across Europe, North Africa, and the United States.",
+      "longBio": "Before joining Horizon Chronicle, Samira spent a decade reporting from capitals and border regions where national policy becomes daily life. Her work combines public records, field interviews, and close attention to the people most affected by political choices. She leads the newsroom's conflict-sensitivity and source-protection training."
+    },
+    {
+      "slug": "daniel-harper",
+      "name": "Daniel Harper",
+      "role": "Senior Political Correspondent",
+      "location": "Washington, D.C.",
+      "image": "/images/authors/james_calloway.webp",
+      "email": "daniel@horizon-chronicle.example",
+      "beats": [
+        "Politics",
+        "Opinion"
+      ],
+      "bio": "Daniel Harper covers Congress, elections, public administration, and the ideas reshaping political coalitions.",
+      "longBio": "Daniel began his career on a metropolitan investigations desk and later covered three national election cycles. He is interested in how legislation moves from campaign language to implementation, and in the institutions that make public accountability possible."
+    },
+    {
+      "slug": "olivia-bennett",
+      "name": "Olivia Bennett",
+      "role": "Business & Markets Editor",
+      "location": "London",
+      "image": "/images/authors/diana_reeves.webp",
+      "email": "olivia@horizon-chronicle.example",
+      "beats": [
+        "Business",
+        "Lifestyle"
+      ],
+      "bio": "Olivia Bennett explains markets, companies, work, and household economics with an emphasis on evidence over spectacle.",
+      "longBio": "Olivia has reported on central banks, energy companies, small businesses, and consumer finance. Her stories pair economic data with interviews in workplaces and homes, showing how large market shifts become personal decisions."
+    },
+    {
+      "slug": "marcus-reed",
+      "name": "Marcus Reed",
+      "role": "Science & Technology Editor",
+      "location": "San Francisco",
+      "image": "/images/authors/nathan_cole.webp",
+      "email": "marcus@horizon-chronicle.example",
+      "beats": [
+        "Technology",
+        "Science"
+      ],
+      "bio": "Marcus Reed covers artificial intelligence, cybersecurity, space, medicine, and the policies built around emerging technology.",
+      "longBio": "A former software engineer, Marcus specializes in translating technical claims without flattening their uncertainty. He runs Horizon Chronicle's evidence checklist for science reporting and co-hosts the weekly Field Notes podcast."
+    },
+    {
+      "slug": "elena-costa",
+      "name": "Elena Costa",
+      "role": "Culture Editor at Large",
+      "location": "Madrid",
+      "image": "/images/authors/monica_voss.webp",
+      "email": "elena@horizon-chronicle.example",
+      "beats": [
+        "Culture",
+        "Entertainment",
+        "Lifestyle"
+      ],
+      "bio": "Elena Costa writes about art, film, music, travel, memory, and the cultural institutions that shape public life.",
+      "longBio": "Elena's features move between museums, studios, archives, neighborhoods, and festivals. She is particularly interested in overlooked creators and the ways technology changes who can make and preserve culture."
+    },
+    {
+      "slug": "noah-walker",
+      "name": "Noah Walker",
+      "role": "Sports & Society Correspondent",
+      "location": "Toronto",
+      "image": "/images/authors/derek_holloway.webp",
+      "email": "noah@horizon-chronicle.example",
+      "beats": [
+        "Sports",
+        "Opinion"
+      ],
+      "bio": "Noah Walker covers competition, athlete welfare, sports business, and the communities that gather around games.",
+      "longBio": "Noah has reported from major tournaments and neighborhood leagues alike. His work examines both performance and power: labor, access, public money, health, and the social histories carried by teams and supporters."
+    }
+  ],
+  "categories": [
+    {
+      "category": "world",
+      "author": {
+        "slug": "samira-mitchell",
+        "name": "Samira Mitchell",
+        "role": "Global Affairs Editor",
+        "location": "New York",
+        "image": "/images/authors/claire_donovan.webp",
+        "email": "samira@horizon-chronicle.example",
+        "beats": [
+          "World",
+          "Politics"
+        ],
+        "bio": "Samira Mitchell reports on diplomacy, conflict, democratic institutions, and the human consequences of international decisions. She has worked across Europe, North Africa, and the United States.",
+        "longBio": "Before joining Horizon Chronicle, Samira spent a decade reporting from capitals and border regions where national policy becomes daily life. Her work combines public records, field interviews, and close attention to the people most affected by political choices. She leads the newsroom's conflict-sensitivity and source-protection training."
+      }
+    },
+    {
+      "category": "politics",
+      "author": {
+        "slug": "daniel-harper",
+        "name": "Daniel Harper",
+        "role": "Senior Political Correspondent",
+        "location": "Washington, D.C.",
+        "image": "/images/authors/james_calloway.webp",
+        "email": "daniel@horizon-chronicle.example",
+        "beats": [
+          "Politics",
+          "Opinion"
+        ],
+        "bio": "Daniel Harper covers Congress, elections, public administration, and the ideas reshaping political coalitions.",
+        "longBio": "Daniel began his career on a metropolitan investigations desk and later covered three national election cycles. He is interested in how legislation moves from campaign language to implementation, and in the institutions that make public accountability possible."
+      }
+    },
+    {
+      "category": "business",
+      "author": {
+        "slug": "olivia-bennett",
+        "name": "Olivia Bennett",
+        "role": "Business & Markets Editor",
+        "location": "London",
+        "image": "/images/authors/diana_reeves.webp",
+        "email": "olivia@horizon-chronicle.example",
+        "beats": [
+          "Business",
+          "Lifestyle"
+        ],
+        "bio": "Olivia Bennett explains markets, companies, work, and household economics with an emphasis on evidence over spectacle.",
+        "longBio": "Olivia has reported on central banks, energy companies, small businesses, and consumer finance. Her stories pair economic data with interviews in workplaces and homes, showing how large market shifts become personal decisions."
+      }
+    },
+    {
+      "category": "technology",
+      "author": {
+        "slug": "marcus-reed",
+        "name": "Marcus Reed",
+        "role": "Science & Technology Editor",
+        "location": "San Francisco",
+        "image": "/images/authors/nathan_cole.webp",
+        "email": "marcus@horizon-chronicle.example",
+        "beats": [
+          "Technology",
+          "Science"
+        ],
+        "bio": "Marcus Reed covers artificial intelligence, cybersecurity, space, medicine, and the policies built around emerging technology.",
+        "longBio": "A former software engineer, Marcus specializes in translating technical claims without flattening their uncertainty. He runs Horizon Chronicle's evidence checklist for science reporting and co-hosts the weekly Field Notes podcast."
+      }
+    },
+    {
+      "category": "science",
+      "author": {
+        "slug": "marcus-reed",
+        "name": "Marcus Reed",
+        "role": "Science & Technology Editor",
+        "location": "San Francisco",
+        "image": "/images/authors/nathan_cole.webp",
+        "email": "marcus@horizon-chronicle.example",
+        "beats": [
+          "Technology",
+          "Science"
+        ],
+        "bio": "Marcus Reed covers artificial intelligence, cybersecurity, space, medicine, and the policies built around emerging technology.",
+        "longBio": "A former software engineer, Marcus specializes in translating technical claims without flattening their uncertainty. He runs Horizon Chronicle's evidence checklist for science reporting and co-hosts the weekly Field Notes podcast."
+      }
+    },
+    {
+      "category": "sports",
+      "author": {
+        "slug": "noah-walker",
+        "name": "Noah Walker",
+        "role": "Sports & Society Correspondent",
+        "location": "Toronto",
+        "image": "/images/authors/derek_holloway.webp",
+        "email": "noah@horizon-chronicle.example",
+        "beats": [
+          "Sports",
+          "Opinion"
+        ],
+        "bio": "Noah Walker covers competition, athlete welfare, sports business, and the communities that gather around games.",
+        "longBio": "Noah has reported from major tournaments and neighborhood leagues alike. His work examines both performance and power: labor, access, public money, health, and the social histories carried by teams and supporters."
+      }
+    },
+    {
+      "category": "entertainment",
+      "author": {
+        "slug": "elena-costa",
+        "name": "Elena Costa",
+        "role": "Culture Editor at Large",
+        "location": "Madrid",
+        "image": "/images/authors/monica_voss.webp",
+        "email": "elena@horizon-chronicle.example",
+        "beats": [
+          "Culture",
+          "Entertainment",
+          "Lifestyle"
+        ],
+        "bio": "Elena Costa writes about art, film, music, travel, memory, and the cultural institutions that shape public life.",
+        "longBio": "Elena's features move between museums, studios, archives, neighborhoods, and festivals. She is particularly interested in overlooked creators and the ways technology changes who can make and preserve culture."
+      }
+    },
+    {
+      "category": "lifestyle",
+      "author": {
+        "slug": "elena-costa",
+        "name": "Elena Costa",
+        "role": "Culture Editor at Large",
+        "location": "Madrid",
+        "image": "/images/authors/monica_voss.webp",
+        "email": "elena@horizon-chronicle.example",
+        "beats": [
+          "Culture",
+          "Entertainment",
+          "Lifestyle"
+        ],
+        "bio": "Elena Costa writes about art, film, music, travel, memory, and the cultural institutions that shape public life.",
+        "longBio": "Elena's features move between museums, studios, archives, neighborhoods, and festivals. She is particularly interested in overlooked creators and the ways technology changes who can make and preserve culture."
+      }
+    },
+    {
+      "category": "opinion",
+      "author": {
+        "slug": "daniel-harper",
+        "name": "Daniel Harper",
+        "role": "Senior Political Correspondent",
+        "location": "Washington, D.C.",
+        "image": "/images/authors/james_calloway.webp",
+        "email": "daniel@horizon-chronicle.example",
+        "beats": [
+          "Politics",
+          "Opinion"
+        ],
+        "bio": "Daniel Harper covers Congress, elections, public administration, and the ideas reshaping political coalitions.",
+        "longBio": "Daniel began his career on a metropolitan investigations desk and later covered three national election cycles. He is interested in how legislation moves from campaign language to implementation, and in the institutions that make public accountability possible."
+      }
+    },
+    {
+      "category": "culture",
+      "author": {
+        "slug": "elena-costa",
+        "name": "Elena Costa",
+        "role": "Culture Editor at Large",
+        "location": "Madrid",
+        "image": "/images/authors/monica_voss.webp",
+        "email": "elena@horizon-chronicle.example",
+        "beats": [
+          "Culture",
+          "Entertainment",
+          "Lifestyle"
+        ],
+        "bio": "Elena Costa writes about art, film, music, travel, memory, and the cultural institutions that shape public life.",
+        "longBio": "Elena's features move between museums, studios, archives, neighborhoods, and festivals. She is particularly interested in overlooked creators and the ways technology changes who can make and preserve culture."
+      }
+    }
+  ]
+}
