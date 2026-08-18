@@ -82,7 +82,7 @@ export default async function ArticlePage({ params }) {
         <Eyebrow>{article.category}</Eyebrow>
         <h1 className="my-[11px] max-w-[1000px] font-serif text-[27px] font-bold leading-[.97] tracking-[-.035em] sm:text-[clamp(44px,3.8vw,76px)]">{article.title}</h1>
         <p className="mb-[22px] max-w-[790px] font-serif text-xs leading-[1.42] text-[#4e5752] md:text-sm">{article.excerpt}</p>
-        <div className="flex items-center justify-between gap-[13px] sm:gap-7">
+        <div className="flex flex-col items-start gap-[13px] sm:flex-row sm:items-center sm:justify-between sm:gap-7">
           <Byline article={article} />
           <ShareTools title={article.title} image={absoluteUrl(article.image)} />
         </div>
