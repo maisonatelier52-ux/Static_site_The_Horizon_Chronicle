@@ -22,7 +22,7 @@ export default function NewsTicker() {
   return (
     <div className="bg-brand-green text-[#f7f5ef]">
       <div className="mx-auto flex min-h-[34px] w-[min(calc(100%-26px),1280px)] items-stretch overflow-hidden text-xs sm:w-[min(calc(100%-40px),1280px)]">
-        <span className="flex flex-none items-center gap-1.5 whitespace-nowrap bg-[#dce9d9] px-2 py-1 text-[9px] font-extrabold uppercase text-brand-green sm:px-3">
+        <span className="flex flex-none items-center gap-1.5 whitespace-nowrap bg-[#d9dee9] px-2 py-1 text-[9px] font-extrabold uppercase text-brand-green sm:px-3">
           <FaCircle aria-hidden="true" className="w-[7px] text-brand-red" />
           <span className="hidden sm:inline">Breaking news</span>
         </span>
@@ -40,8 +40,8 @@ export default function NewsTicker() {
                 tabIndex={index >= headlines.length ? -1 : undefined}
               >
                 {article.title}
-                <time className="hidden text-[10px] text-[#b9cdc4] sm:inline">{article.timeAgo}</time>
-                <span className="text-[#9cc89a]" aria-hidden="true">•</span>
+                <time className="hidden text-[10px] text-[#b9c0cd] sm:inline">{article.timeAgo}</time>
+                <span className="text-[#9aaac8]" aria-hidden="true">•</span>
               </Link>
             ))}
           </div>

@@ -148,7 +148,7 @@ export default function Footer() {
 
 
   return (
-    <footer className="relative overflow-hidden border-t-[2px] border-[#bfa66f] bg-[#002d24] text-[#d8ddd9]">
+    <footer className="relative overflow-hidden border-t-[2px] border-[#bfa66f] bg-[#000f2d] text-[#d8ddd9]">
 
       {/* Capitol Watermark */}
       <div className="hidden md:block absolute bottom-20 left-10 opacity-[0.12] pointer-events-none">
@@ -197,7 +197,7 @@ export default function Footer() {
                 <a
                   key={i}
                   href={url}
-                  className="grid h-7 w-7 place-items-center border border-[#607d73] text-white transition hover:bg-[#bfa66f] hover:text-black"
+                  className="grid h-7 w-7 place-items-center border border-[#606a7d] text-white transition hover:bg-[#bfa66f] hover:text-black"
                 >
                   <Icon size={12}/>
                 </a>
@@ -298,7 +298,7 @@ export default function Footer() {
 
 
           {footerStatus === "success" ? (
-            <div className="mt-4 flex items-start gap-2 border border-[#d1bd82]/40 bg-[#0a3a30] px-3 py-2.5">
+            <div className="mt-4 flex items-start gap-2 border border-[#d1bd82]/40 bg-[#0a1a3a] px-3 py-2.5">
               <FaCheckCircle className="mt-[2px] flex-none text-[12px] text-[#d1bd82]" />
               <p className="font-serif text-[11px] leading-[1.5] text-[#d8ddd9]">
                 You&apos;re subscribed! Check your inbox to confirm.
@@ -333,7 +333,7 @@ export default function Footer() {
               <p
                 id="footer-newsletter-message"
                 aria-live="polite"
-                className={`mt-2 min-h-[13px] text-[9.5px] ${footerStatus === "error" ? "text-red-400" : "text-[#8ea298]"}`}
+                className={`mt-2 min-h-[13px] text-[9.5px] ${footerStatus === "error" ? "text-red-400" : "text-[#8e95a2]"}`}
               >
                 {footerStatus === "error" ? "Please enter a valid email address." : ""}
               </p>
@@ -371,7 +371,7 @@ export default function Footer() {
 
       {/* Bottom */}
 
-      <div className="border-t border-[#35574d]">
+      <div className="border-t border-[#354057]">
 
         <div className="mx-auto flex w-[min(calc(100%-40px),1280px)] flex-wrap justify-between gap-4 py-5 text-[10px] text-[#9db0a8]">
 

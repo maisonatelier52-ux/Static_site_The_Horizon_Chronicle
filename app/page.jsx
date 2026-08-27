@@ -125,7 +125,7 @@ export default function HomePage() {
           </div>
 
           <div
-            className="flex h-[300px] flex-col items-center justify-center bg-emerald-900 px-4 py-10 text-center text-white lg:sticky lg:top-6 lg:py-0"
+            className="flex h-[300px] flex-col items-center justify-center bg-[#011948] px-4 py-10 text-center text-white lg:sticky lg:top-6 lg:py-0"
             id="newsletter"
           >
             <span className="text-lg text-brand-gold">✦</span>

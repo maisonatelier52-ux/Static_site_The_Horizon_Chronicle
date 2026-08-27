@@ -12,8 +12,8 @@ module.exports = {
         ink: "#101b17",
         muted: "#6e726c",
         brand: {
-          green: "#073f32",
-          "green-2": "#0d5341",
+          green: "#011948",
+          "green-2": "#011948",
           gold: "#b59b62",
           red: "#a5231d",
         },

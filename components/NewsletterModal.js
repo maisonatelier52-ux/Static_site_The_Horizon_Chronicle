@@ -91,7 +91,7 @@ export default function NewsletterModal({ open, onClose }) {
         className="relative w-full max-w-[440px] border border-line-dark bg-cream shadow-[0_30px_80px_rgba(8,16,13,.35)]"
       >
         {/* Header band */}
-        <div className="relative overflow-hidden border-b border-[#0d5341] bg-brand-green px-6 pb-6 pt-7 text-cream">
+        <div className="relative overflow-hidden border-b border-[#011948] bg-brand-green px-6 pb-6 pt-7 text-cream">
           <div className="pointer-events-none absolute -right-6 -top-8 text-[110px] leading-none text-white/5">
             <FaEnvelopeOpenText />
           </div>
