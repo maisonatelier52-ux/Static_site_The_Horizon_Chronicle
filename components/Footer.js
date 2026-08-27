@@ -92,6 +92,7 @@
 
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import {
   FaFacebookF,
@@ -99,12 +100,32 @@ import {
   FaLinkedinIn,
   FaYoutube,
   FaChevronUp,
+  FaCheckCircle,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { categories } from "@/lib/content";
 import { site, slugify } from "@/lib/site";
 
 export default function Footer() {
+
+  const [footerEmail, setFooterEmail] = useState("");
+  const [footerStatus, setFooterStatus] = useState("idle"); // idle | error | success
+
+  const isValidEmail = (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+
+  const handleFooterSubscribe = (event) => {
+    event.preventDefault();
+    const trimmed = footerEmail.trim();
+    if (!trimmed || !isValidEmail(trimmed)) {
+      setFooterStatus("error");
+      return;
+    }
+    if (site.newsletterUrl) {
+      window.open(`${site.newsletterUrl}?email=${encodeURIComponent(trimmed)}`, "_blank", "noopener,noreferrer");
+    }
+    setFooterStatus("success");
+    setFooterEmail("");
+  };
 
   const quickLinks = [
     ["Latest News", "/latest-news"],
@@ -276,15 +297,48 @@ export default function Footer() {
           </p>
 
 
-          <input
-            placeholder="Enter your email"
-            className="mt-4 h-8 w-full px-3 text-[11px] text-black outline-none"
-          />
+          {footerStatus === "success" ? (
+            <div className="mt-4 flex items-start gap-2 border border-[#d1bd82]/40 bg-[#0a3a30] px-3 py-2.5">
+              <FaCheckCircle className="mt-[2px] flex-none text-[12px] text-[#d1bd82]" />
+              <p className="font-serif text-[11px] leading-[1.5] text-[#d8ddd9]">
+                You&apos;re subscribed! Check your inbox to confirm.
+              </p>
+            </div>
+          ) : (
+            <form onSubmit={handleFooterSubscribe} noValidate>
+              <input
+                type="email"
+                inputMode="email"
+                autoComplete="email"
+                placeholder="Enter your email"
+                value={footerEmail}
+                onChange={(event) => {
+                  setFooterEmail(event.target.value);
+                  if (footerStatus === "error") setFooterStatus("idle");
+                }}
+                aria-invalid={footerStatus === "error"}
+                aria-describedby="footer-newsletter-message"
+                className={`mt-4 h-8 w-full border px-3 text-[11px] text-black outline-none ${
+                  footerStatus === "error" ? "border-2 border-red-500" : "border-transparent"
+                }`}
+              />
 
+              <button
+                type="submit"
+                className="mt-3 w-full cursor-pointer bg-[#d1bd82] py-2 text-[11px] font-semibold text-black transition-opacity hover:opacity-90"
+              >
+                Subscribe
+              </button>
 
-          <button className="mt-3 w-full bg-[#d1bd82] py-2 text-[11px] font-semibold text-black">
-            Subscribe
-          </button>
+              <p
+                id="footer-newsletter-message"
+                aria-live="polite"
+                className={`mt-2 min-h-[13px] text-[9.5px] ${footerStatus === "error" ? "text-red-400" : "text-[#8ea298]"}`}
+              >
+                {footerStatus === "error" ? "Please enter a valid email address." : ""}
+              </p>
+            </form>
+          )}
 
 
           <div className="mt-4 text-center">

@@ -19,6 +19,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { articles, getAuthor, searchArticles } from "@/lib/content";
 import { categoryHref, site, slugify } from "@/lib/site";
 import NewsTicker from "./NewsTicker";
+import NewsletterModal from "./NewsletterModal";
 
 export default function Header() {
   const pathname = usePathname();
@@ -28,6 +29,7 @@ export default function Header() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [dateLabel, setDateLabel] = useState("August 13, 2026");
+  const [newsletterOpen, setNewsletterOpen] = useState(false);
 
   useEffect(() => {
     setDateLabel(
@@ -66,6 +68,7 @@ export default function Header() {
   useEffect(() => {
     setMenuOpen(false);
     setSearchOpen(false);
+    setNewsletterOpen(false);
   }, [pathname]);
 
   const results = query ? searchArticles(query).slice(0, 5) : articles.slice(0, 5);
@@ -122,12 +125,13 @@ export default function Header() {
             >
               <FaSearch />
             </button>
-            <Link
-              className="hidden min-h-[34px] items-center justify-center border border-brand-green bg-brand-green px-4 text-[11px] font-bold tracking-[.02em] text-cream transition-colors hover:bg-brand-green-2 md:inline-flex"
-              href="#newsletter"
+            <button
+              type="button"
+              className="hidden min-h-[34px] cursor-pointer items-center justify-center border border-brand-green bg-brand-green px-4 text-[11px] font-bold tracking-[.02em] text-cream transition-colors hover:bg-brand-green-2 md:inline-flex"
+              onClick={() => setNewsletterOpen(true)}
             >
               Subscribe
-            </Link>
+            </button>
             {searchOpen && (
               <div className="fixed left-[13px] right-[13px] top-[42px] z-50 border border-line-dark bg-cream shadow-[0_18px_50px_rgba(16,27,23,.2)] sm:absolute sm:left-auto sm:right-0 sm:top-[44px] sm:w-[min(480px,calc(100vw-30px))]">
                 <form className="grid grid-cols-[20px_1fr_auto] items-center gap-2.5 border-b border-line p-[15px]" onSubmit={submitSearch}>
@@ -218,6 +222,7 @@ export default function Header() {
         </nav>
       </header>
       <NewsTicker />
+      <NewsletterModal open={newsletterOpen} onClose={() => setNewsletterOpen(false)} />
     </>
   );
 }

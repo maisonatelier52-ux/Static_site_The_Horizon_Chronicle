@@ -25,7 +25,7 @@ export default function NewsletterForm({ compact = false }) {
       <div className="grid grid-cols-1 gap-2">
         <input
           aria-label="Email address"
-          className="min-w-0 border border-line bg-cream px-3 py-2.5 text-xs outline-brand-green"
+          className="min-w-0 border border-line bg-cream px-3 py-2.5 text-xs outline-brand-green text-black"
           type="email"
           value={email}
           onChange={(event) => {
