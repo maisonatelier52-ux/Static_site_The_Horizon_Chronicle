@@ -195,7 +195,7 @@ export default function Header() {
         >
           <div className="mx-auto grid w-[min(calc(100%-26px),1280px)] grid-cols-2 gap-0 px-[13px] pb-[18px] pt-2.5 text-[13px] font-bold sm:w-[min(calc(100%-40px),1280px)] md:flex md:min-h-[46px] md:w-[min(calc(100%-40px),1280px)] md:grid-cols-none md:items-center md:justify-center md:gap-[clamp(15px,2.1vw,33px)] md:px-0 md:py-0">
             <FaBars className="mr-auto hidden md:block" aria-hidden="true" />
-            {['Home', 'World', 'Politics', 'Business', 'Technology', 'Science', 'Sports', 'Entertainment', 'Lifestyle', 'Opinion', 'Culture'].map((item) => {
+            {['Home', 'World', 'Politics', 'Business', 'Finance', 'U.S', 'Technology', 'Science', 'Sports', 'Entertainment', 'Lifestyle', 'Opinion', 'Culture'].map((item) => {
               const href = categoryHref(item);
               const active = href === "/" ? pathname === "/" : pathname.startsWith(href);
               return (
